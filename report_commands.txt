@@ -1,0 +1,141 @@
+   41  yamllint ../.github/workflows/deploy-docs.yml
+   43  cat > .github/workflows/deploy-docs.yml << 'EOF'
+   84  yamlint .github/workflows/deploy-docs.yml 
+   85  yamllint .github/workflows/deploy-docs.yml 
+   87  wget https://github.com/arq5x/bedtools2/releases/download/v2.29.1/bedtools-2.29.1.tar.gz
+  297  git init
+  298  git add README.md 
+  299  git commit -m 'init commit'
+  300  git remote add origin  https://github.com/1g0r2005/Seminars_2026.git
+  301  git commit -m 'init commit'
+  302  git branch -M main
+  303  git push -u orinig main
+  317  git init
+  324  rm -rf .git/
+  331  git init
+  335  git comit -m 'first commit'
+  336  git commit -m 'first commit'
+  337  git config user.email 'basikhin.ia@phystech.edu'
+  338  git config user.name 'Tevi'
+  339  git commit -m 'first commit'
+  342  git add README.md 
+  343  git commit -m 'first commit'
+  344  git branch -M main
+  345  git remote add origin https://github.com/1g0r2005/Seminars_2026.git
+  346  git push -u origin main
+  347  git remote set-url https://github.com/1g0r2005/Seminars_2026.git
+  348  git status
+  349  git log
+  350  git remote
+  351  git push origin main
+  352  git push --help
+  353  git remote -v
+  354  git push -u origin main
+  355  git remote set-url origin git@github.com:1g0r2005/Seminars_2026.git
+  356  git push -u origin main
+  357  git checkout -b develop
+  373  git add task1/data/samples.tsv 
+  374  git status
+  375  git commit -m '[New] data sample in samples.tsv'
+  376  git status
+  377  git log
+  378  git show
+  379  git remote
+  380  git push
+  381  git checkout main
+  383  { echo; git log показывает историю коммитов, а git show показывает детали отдельного коммита; }
+  384  { echo; "git log показывает историю коммитов, а git show показывает детали отдельного коммита; }
+  385  echo "git log показывает историю коммитов, а git show показывает детали отдельного коммита" > diff.file
+  387  git commit -m '[New] diff.file'
+  388  git add diff.file
+  389  git commit -m '[New] diff.file'
+  390  git push
+  391  git checkout develop
+  394  git add task1/scripts/one_more_test.txt 
+  395  git commit -m '[New] one_more_test.txt'
+  396  git show
+  397  git show > git_show_before.txt
+  399  cat git_show_before.txt 
+  400  git revert HEAD
+  401  git show
+  402  git revert HEAD
+  403  git status
+  446  git clone --help
+  447  git clone https://github.com/Weakne55/Bioinformatics305/tree/master#
+  448  git clone https://github.com/Weakne55/Bioinformatics305/
+  451  git remote remove origin
+  452  git remote add git@github.com:1g0r2005/Bioinf_task1.git
+  453  git remote add https://github.com/1g0r2005/Bioinf_task1/
+  454  git remote add origin https://github.com/1g0r2005/Bioinf_task1/
+  455  git status
+  456  git commit 'add'
+  461  git status
+  462  git add 
+  463  git add .
+  464  git status
+  465  git commit
+  466  git congfig --global user.emai "basikhin.ia@phystech.edu"
+  467  git config --global user.emai "basikhin.ia@phystech.edu"
+  468  git config --global user.email "basikhin.ia@phystech.edu"
+  469  git config --global user.name "Tevi"
+  470  git commit
+  471  git status
+  472  git push -u origin main
+  582  rm -rf seminars_repo_2026/.git
+  590  rm -rf .git
+  591  rm -rf Bioinformatics305/.git
+  594  git clone https://github.com/Weakne55/Bioinformatics305
+  597  git remote remove origin
+  598  git remote add origin https://github.com/1g0r2005/Bioinformatics_HW1
+  602  git add .
+  603  git status
+  604  git commit -m "Cleanup temp files"
+  605  git push origin master
+  606  git remote set origin git@github.com:1g0r2005/Bioinformatics_HW1.git
+  607  git remote set-url origin git@github.com:1g0r2005/Bioinformatics_HW1.git
+  608  git push origin master
+  620  git checkout -b investigation
+  621  git add lab_disaster/raw_data/infected_reads.txt 
+  622  git commit -m "Add infected reads with TGCA"
+  623  git push origin investigation 
+  626  git add mini_run.fastq 
+  627  git commit -m "Add short read file (50 head and 50 tail)"
+  628  git push origin investigation 
+  632  git status
+  633  git restore experiment.log
+  634  git checkout HEAD -- experiment.log
+  636  git restore lab_disaster/experiment.log
+  637  echo "git restore lab_disaster/experiment.log" > lab_disaster/command.txt
+  638  git checkout master
+  639  git add lab_disaster/command.txt 
+  640  git commit -m "Add restoration command in command.txt"
+  641  git push origin master
+  656  git add sort.txt 
+  657  git commit -m "Add sorted users in sort.txt"
+  658  git push origin master
+  659  git checkout master
+  660  git merge investigation
+  661  git status
+  662  git commit -m "Merging investigation into master"
+  663  git push origin master
+  676  git add genes_fixed.csv 
+  677  git status
+  678  git commit -m "Add fixed file as genes_fixed.csv"
+  679  git push origin master
+  698  git checkout -b cleaning
+  699  git add diskusage.file 
+  700  git commit -m "Add file with sizes in diskusage.file"
+  701  git push origin cleaning
+  709  git add empty_file 
+  710  git commit -m "Add empty file"
+  711  git log --oneline -n 1
+  713  git add forgotten.txt 
+  714  git commit --amend --no-edit
+  715  git log --oneline -n 1
+  718  git checout master
+  719  git checkout master
+  720  git add amend.txt 
+  721  git commit -m "Add file with answers for task 8 in amend.txt"
+  722  git push origin master
+  723  history | grep "git"
+  724  history | grep "git" > report_commands.txt
